@@ -27,32 +27,3 @@ class Song
     new_song
   end
 end
-
-
-
-
-
-
-# class Song
-#    attr_accessor :name, :artist
-#
-#   @@all = []
-#
-#   def initialize(name)
-#     @name = name
-#     @@all << self
-#   end
-#
-#   def self.all
-#     @@all
-#   end
-#
-#   def self.new_by_filename(filename)
-#     array_of_data = filename.split(/[-.]/)
-#     title = array_of_data[1].strip
-#     new_song = Song.new(title)
-#     new_song.artist = Artist.find_or_create_by_name(array_of_data[0].strip)
-#     new_song
-#     binding.pry
-#   end
-# end
